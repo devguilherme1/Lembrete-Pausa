@@ -8,7 +8,6 @@ const char* password = "";
 // -------------------- Pinos --------------------
 const int BUTTON_PIN = 4;  // Botão (INPUT_PULLUP)
 const int BUZZER_PIN = 5;  // Buzzer
-const int LED_PIN    = 2;  // LED interno
 
 // -------------------- Tempo --------------------
 unsigned long startTime = 0;
@@ -78,9 +77,7 @@ void setup() {
 
   pinMode(BUTTON_PIN, INPUT_PULLUP);
   pinMode(BUZZER_PIN, OUTPUT);
-  pinMode(LED_PIN, OUTPUT);
 
-  digitalWrite(LED_PIN, LOW);
   noTone(BUZZER_PIN);
 
   conectarWiFi();
@@ -104,7 +101,6 @@ void loop() {
     precisaEnviarPausaPendente = true; // marca que deve registrar esta pausa
 
     tone(BUZZER_PIN, 2000);      // beep contínuo
-    digitalWrite(LED_PIN, HIGH);
 
     Serial.println("Hora da pausa!");
   }
@@ -120,7 +116,6 @@ void loop() {
 
     // Para o alerta imediatamente
     noTone(BUZZER_PIN);
-    digitalWrite(LED_PIN, LOW);
 
     Serial.println("Botão apertado: reiniciando contagem.");
     beepCurto();
