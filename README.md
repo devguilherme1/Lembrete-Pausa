@@ -34,9 +34,9 @@ O problema abordado é a falta de pausas durante longos períodos de trabalho, e
 
 O projeto utiliza requisições HTTP POST para registrar dois tipos de eventos:
 
-	•	pausa_pendente — enviado quando o tempo de trabalho expira.
+		pausa_pendente — enviado quando o tempo de trabalho expira.
 	
-	•	pausa_realizada — enviado quando o usuário pressiona o botão.
+		pausa_realizada — enviado quando o usuário pressiona o botão.
 
 
 # Link para a Simulação Wokwi.
