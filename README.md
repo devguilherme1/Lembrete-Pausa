@@ -63,5 +63,4 @@ O projeto ajuda a garantir pausas regulares, algo essencial para evitar cansaço
 
 		
 
-	•	diagram.json – diagrama de circuito do Wokwi.
-	•	wokwi-project.txt – metadados da simulação
+	
